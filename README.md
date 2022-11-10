@@ -1,2 +1,2 @@
 # MassPrinterInstall
-Mass Printer Install
+Mass Printer Install with import via CSV / text file
