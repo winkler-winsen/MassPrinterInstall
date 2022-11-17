@@ -11,7 +11,8 @@ $pcs = Import-Csv $csvfile -Header Name
 $pcs | Out-GridView
 
 
-Remove-Item $notdonecsv -Force
+Remove-Item $notdonecsv -Force | Out-Null
+New-Item -Path $notdonecsv -ItemType "file" -Force | Out-Null
 
 $c=0
 
